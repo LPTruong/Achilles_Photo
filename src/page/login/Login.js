@@ -1,7 +1,7 @@
 const Login = () => {
   return (
       <div className = "login">
-        <h2 className="login-title">Welcome Back</h2>
+        <h2 className="login-title">Welcome to ABCXYZT</h2>
         <h3 className="login-text"> Fill in your login details to proceed</h3>
         <form >  
           <input className = "login-email"  type="text" id="email" name="email" placeholder="  Email"/><br></br>
