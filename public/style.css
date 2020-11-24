@@ -43,7 +43,7 @@ p {
 .nav .nav-item {
     text-decoration: none;
     margin: 0px 30px;
-    color: #333333;
+    color: #000000;
     font-weight: bold;
     font-size: 20px;
 }
@@ -61,6 +61,134 @@ p {
     right: 10px;
 }
 /* /Header */
+/* Login */
+.login {
+    position: relative;
+    width: 1366px;
+    height: 700px;
+
+    background: #FFFFFF;
+}
+.login-title {
+    background: linear-gradient(#e169a1, #4526c2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 100;
+    position: absolute;
+    width: 340.65px;
+    height: 80.23px;
+    left: 620px;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 60px;
+
+  
+}
+.login-text {
+
+    position: absolute;
+    width: 350px;
+    height: 32.93px;
+    left: 481px;
+    top: 110px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 156% */
+
+
+
+}
+.login-email {
+    position: absolute;
+    width: 580px;
+    height:70px;
+    left: 481px;
+    top: 180px;
+    
+    
+    background: #FFFFFF;
+    border: 2px solid  #9c367e;
+    box-sizing: border-box;
+    border-radius: 29px;
+    font-size: 20px;
+}
+
+.login-password {
+    position: absolute;
+    width: 580px;
+    height:70px;
+    left: 481px;
+    top: 290px;
+    
+    background: #FFFFFF;
+    border: 2px solid #9c367e;
+    box-sizing: border-box;
+    border-radius: 29px;
+    font-size: 20px;
+}
+.login-forgot {
+    position: absolute;
+   
+    left: 900px;
+    top: 385px;
+    
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20;
+    line-height: 18px;
+    /* or 133% */
+
+
+
+}
+
+.login .login-btn{
+    position: relative;
+    top: 400px;
+    left: 705px;
+    height: 60px;
+    
+    
+}
+.login-text2 {
+    position: absolute;
+    width: 350px;
+    height: 32.93px;
+    left: 625px;
+    top: 500px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 156% */
+}
+.login-signup {
+    position: absolute;
+   
+    left: 830px;
+    top: 511px;
+    
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20;
+    line-height: 30px;
+}
+
+/* Login */
 
 /* Footer */
 .footer {
