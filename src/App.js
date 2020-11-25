@@ -6,6 +6,7 @@ import ContactUs from "./page/contact/ContactUs"
 import Login from "./page/login/Login"
 import Header from "./page/Header"
 import Footer from "./page/Footer"
+import 'antd/dist/antd.css';
 
 const App = () => {
   return (
