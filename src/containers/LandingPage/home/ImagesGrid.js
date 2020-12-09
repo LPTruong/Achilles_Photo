@@ -1,9 +1,9 @@
-import corgi1 from "../../assets/corgi1.jpg"
-import corgi2 from "../../assets/corgi2.jpg"
-import corgi3 from "../../assets/corgi3.jpg"
-import corgi4 from "../../assets/corgi4.jpg"
-import corgi5 from "../../assets/corgi5.jpg"
-import corgi6 from "../../assets/corgi6.jpg"
+import corgi1 from "../../../assets/corgi1.jpg"
+import corgi2 from "../../../assets/corgi2.jpg"
+import corgi3 from "../../../assets/corgi3.jpg"
+import corgi4 from "../../../assets/corgi4.jpg"
+import corgi5 from "../../../assets/corgi5.jpg"
+import corgi6 from "../../../assets/corgi6.jpg"
 
 const ImagesGrid = (props) => {
     if (props.column === 2) return (

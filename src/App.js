@@ -1,17 +1,18 @@
-import {BrowserRouter, Switch, Route} from "react-router-dom"
-import Home from "./page/home/Home"
-import AboutUs from "./page/about/AboutUs"
-import Blog from "./page/blog/Blog"
-import ContactUs from "./page/contact/ContactUs"
-import Login from "./page/login/Login"
-import Header from "./page/Header"
-import Footer from "./page/Footer"
-import 'antd/dist/antd.css';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./containers/LandingPage/home/Home";
+import AboutUs from "./containers/LandingPage/about/AboutUs";
+import Blog from "./containers/LandingPage/blog/Blog";
+import ContactUs from "./containers/LandingPage/contact/ContactUs";
+import Login from "./containers/Login/Login";
+import Header from "./containers/LandingPage/Header";
+import Footer from "./containers/LandingPage/Footer";
+import "antd/dist/antd.css";
+import Register from "./containers/Register/Register";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header index={1}/>
+      <Header index={1} />
       <Switch>
         <Route exact path="/">
           <Home />
@@ -28,10 +29,13 @@ const App = () => {
         <Route path="/login">
           <Login />
         </Route>
+        <Route path="/register">
+          <Register />
+        </Route>
       </Switch>
       <Footer />
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App;

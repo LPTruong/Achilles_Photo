@@ -1,4 +1,4 @@
-import image from "../../assets/corgi2.jpg"
+import image from "../../../assets/corgi2.jpg"
 
 const HomeBlock4 = () => {
     return (

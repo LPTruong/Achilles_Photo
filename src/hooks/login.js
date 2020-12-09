@@ -1,21 +1,15 @@
-const { useState } = require("react")
+const { useState } = require("react");
 
 const useLogin = () => {
-    const [isRegisterd, setIsRegisted] = useState(true);
+  const [isRegisterd, setIsRegisted] = useState(true);
 
-    const setRegisterIfMlaTruong = (name) => {
-
-        if (name === "Truong") {
-            setIsRegisted(false);
-        }
-
+  const setRegisterIfMlaTruong = (name) => {
+    if (name === "Truong") {
+      setIsRegisted(false);
     }
+  };
 
-    return (
-        isRegisterd,
-        setIsRegisted,
-        setRegisterIfMlaTruong
-    )
-}
+  return isRegisterd, setIsRegisted, setRegisterIfMlaTruong;
+};
 
 export default useLogin;

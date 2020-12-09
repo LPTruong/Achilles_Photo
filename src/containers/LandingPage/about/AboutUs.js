@@ -1,9 +1,9 @@
-import Login from '../../containers/Login/Login';
 
+import Login from '../../Login/Login';
 const AboutUs = () => {
     return (
-        <div style={{margin: "auto"}}>
-            <Login />
+        <div>
+            
             <h2>About Us</h2>
         </div>
     )
