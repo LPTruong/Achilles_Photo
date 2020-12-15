@@ -30,6 +30,9 @@ const Header = () => {
     case "register":
       index = 6;
       break;
+    case "forgot_password":
+      index = 7;
+      break;
     default:
       break;
   }
@@ -77,6 +80,7 @@ const Header = () => {
           Login
         </Link>
         <Link to="/register" onClick={handleSidebar}></Link>
+        <Link to="/forgot_password" onClick={handleSidebar}></Link>
       </div>
     </div>
   );
