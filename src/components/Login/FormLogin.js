@@ -51,7 +51,7 @@ const LoginForm = () => {
           <Checkbox>Remember me</Checkbox>
         </Form.Item>
 
-        <a className="login-form-forgot" href="">
+        <a className="login-form-forgot" href="/forgot_password">
           Forgot password
         </a>
       </Form.Item>
@@ -60,11 +60,7 @@ const LoginForm = () => {
         <Button type="primary" htmlType="submit" className="login-form-button">
           Log in
         </Button>
-        Or{" "}
-        <a href="/register" onClick="handleSitebar">
-          {" "}
-          register now!
-        </a>
+        Or <a href="/register"> register now!</a>
       </Form.Item>
     </Form>
   );

@@ -8,6 +8,7 @@ import Header from "./containers/LandingPage/Header";
 import Footer from "./containers/LandingPage/Footer";
 import "antd/dist/antd.css";
 import Register from "./containers/Register/Register";
+import ForgotPassword from "./containers/Forgot_Password/Forgot_Passsword";
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
         </Route>
         <Route path="/register">
           <Register />
+        </Route>
+        <Route path="/forgot_password">
+          <ForgotPassword />
         </Route>
       </Switch>
       <Footer />
