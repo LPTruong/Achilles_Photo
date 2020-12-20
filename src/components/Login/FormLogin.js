@@ -4,12 +4,9 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import "./FormLogin";
 import { Link } from "react-router-dom";
 import {useState} from 'react'
+import {authServices} from "../../services";
 
 const LoginForm = () => {
-  const onFinish = (values) => {
-    console.log("Received values of form: ", values);
-  };
-
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
@@ -20,6 +17,14 @@ const LoginForm = () => {
   const handleOnChangePassword = (e ) => {
     setPassword(e.target.value)
   }
+
+  const onFinish = () => {
+    authServices.login().then(
+        res => authServices.setAccessToken(res.data)
+    ).catch(
+        err => console.log(err)
+    )
+  };
 
 
  
