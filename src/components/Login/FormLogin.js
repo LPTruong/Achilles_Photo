@@ -1,12 +1,33 @@
+
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import "./FormLogin";
 import { Link } from "react-router-dom";
+import {useState} from 'react'
+import {authServices} from "../../services";
 
 const LoginForm = () => {
-  const onFinish = (values) => {
-    console.log("Received values of form: ", values);
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleOnChangeUsername = (e) => {
+    setUsername(e.target.value)
+  }
+
+  const handleOnChangePassword = (e ) => {
+    setPassword(e.target.value)
+  }
+
+  const onFinish = () => {
+    authServices.login().then(
+        res => authServices.setAccessToken(res.data)
+    ).catch(
+        err => console.log(err)
+    )
   };
+
+
+ 
 
   return (
     <Form
@@ -29,6 +50,8 @@ const LoginForm = () => {
         <Input
           prefix={<UserOutlined className="site-form-item-icon" />}
           placeholder="Username"
+          value={username}
+          onChange={handleOnChangeUsername}
         />
       </Form.Item>
       <Form.Item
@@ -44,6 +67,8 @@ const LoginForm = () => {
           prefix={<LockOutlined className="site-form-item-icon" />}
           type="password"
           placeholder="Password"
+          value={password}
+          onChange={handleOnChangePassword}
         />
       </Form.Item>
       <Form.Item>
@@ -57,7 +82,7 @@ const LoginForm = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
+        <Button type="primary" htmlType="submit" className="login-form-button" >
           Log in
         </Button>
         Or <a href="/register"> register now!</a>
