@@ -49,6 +49,8 @@ const Logged = () => {
   };
   const [isOpen, setIsOpen] = useState(false);
   const [selectAll, setSelectAll] = useState(false);
+  
+
 
   const toggleSelectAll = () => {
     setSelectAll(!selectAll);
@@ -123,6 +125,7 @@ const Logged = () => {
           ></div>
           <p>
         <button onClick={toggleSelectAll}>toggle select all</button>
+        <button>selected mode</button>
         
       </p>
       <Gallery photos={photos} renderImage={imageRenderer} />
@@ -146,11 +149,7 @@ const Logged = () => {
       <button onClick={() => setIsOpen(true)}>
           Open gallery
         </button>
-      <ReactBnbGallery
-          show={isOpen}
-          photos={photos}
-          onClose={() => setIsOpen(false)}
-        />
+      
         </Content>
         <Footer style={{ textAlign: "center" }}></Footer>
       </Layout>
