@@ -34,16 +34,15 @@ const forgotPassword = () => {
       </h3>
       <br></br>
       <Form.Item
+        className="form_email_forgot"
         name={["user", "email"]}
         rules={[{ type: "email", required: true }]}
       >
-        <Input placeholder="Email" />
+        <Input className="forgot_form_email" placeholder="Email" />
       </Form.Item>
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
+      <div className="forgot_button">
+        <button class="forgot_form_button">Submit</button>
+      </div>
     </Form>
   );
 };

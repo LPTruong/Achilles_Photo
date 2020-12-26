@@ -192,8 +192,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 0px;
 }
 .footer .row-1 .column-1 {
   width: 300px;

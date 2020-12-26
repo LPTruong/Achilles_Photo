@@ -1,33 +1,28 @@
-
 import { Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import "./FormLogin";
 import { Link } from "react-router-dom";
-import {useState} from 'react'
-import {authServices} from "../../services";
+import { useState } from "react";
+import { authServices } from "../../services";
 
 const LoginForm = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleOnChangeUsername = (e) => {
-    setUsername(e.target.value)
-  }
-
-  const handleOnChangePassword = (e ) => {
-    setPassword(e.target.value)
-  }
-
-  const onFinish = () => {
-    authServices.login().then(
-        res => authServices.setAccessToken(res.data)
-    ).catch(
-        err => console.log(err)
-    )
+    setUsername(e.target.value);
   };
 
+  const handleOnChangePassword = (e) => {
+    setPassword(e.target.value);
+  };
 
- 
+  const onFinish = () => {
+    authServices
+      .login()
+      .then((res) => authServices.setAccessToken(res.data))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <Form
@@ -82,9 +77,9 @@ const LoginForm = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button" >
+        <button type="primary" htmlType="submit" class="login-form-button">
           Log in
-        </Button>
+        </button>
         Or <a href="/register"> register now!</a>
       </Form.Item>
     </Form>

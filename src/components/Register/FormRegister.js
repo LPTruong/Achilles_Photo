@@ -266,9 +266,13 @@ const RegistrationForm = () => {
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>
-        <Button type="primary" htmlType="submit">
+        <button
+          className="register_form_button"
+          type="primary"
+          htmlType="submit"
+        >
           Register
-        </Button>
+        </button>
       </Form.Item>
     </Form>
   );

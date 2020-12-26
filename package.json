@@ -13,6 +13,7 @@
     "react": "^16.12.0",
     "react-bnb-gallery": "^1.4.4",
     "react-dom": "^16.12.0",
+    "react-highlight-words": "^0.16.0",
     "react-image-gallery": "^1.0.8",
     "react-images": "^1.1.7",
     "react-photo-gallery": "^8.0.0",
